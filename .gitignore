@@ -1,0 +1,42 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables and secrets
+.env
+*.env
+secrets.toml  # If Fly.io has a secrets file
+
+# SQLite database (if you don’t want to track DB changes)
+db.sqlite3
+
+# Django migrations (optional, ignore compiled migrations)
+*/migrations/*.pyc
+
+# Logs
+logs/
+*.log
+
+# Compiled Python files
+*.py[cod]
+
+# Ignore Docker build files
+*.tar
+*.swp
+docker-build-cache/
+fly-builder-*
+
+# Ignore VS Code settings (if applicable)
+.vscode/
+.idea/
+
+# Fly.io deployment cache & temporary files
+flyctl*
+.fly/
+fly.log
